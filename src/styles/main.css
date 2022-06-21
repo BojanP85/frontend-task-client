@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #e5e5e5;
+}
+
+.sign-in-img {
+  width: 100%;
+}
+
+.sign-in-title {
+  font-size: 1.4rem;
+  color: #171725;
+  line-height: 42px;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.sign-in-form__options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+
+.sign-in-form__checkbox {
+  color: #696974;
+  font-size: 1rem;
+  font-weight: 400;
+  display: flex;
+}
+
+.sign-in-input-error {
+  font-size: 0.7rem;
+  color: red;
+  z-index: 1;
+}
+
+.forgotten-password {
+  color: #127973;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 1;
+  user-select: none;
+}
+
+.forgotten-password:hover,
+.forgotten-password:active {
+  color: #0aa370;
+}
+
+.sign-in-form-background {
+  position: absolute;
+  width: 95%;
+  left: 5%;
+}
+
+.drawer {
+  background: #e7e9e4;
+  height: 2160px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.drawer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.drawer__user-profile {
+  border: 1.0333px solid #114c3a;
+  border-radius: 15.4995px;
+  margin: 60px 10px 40px 10px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  padding: 10px;
+}
+
+.drawer__user-profile--pic {
+  width: 35px;
+  height: 35px;
+}
+
+.drawer__user-profile--info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.drawer__user-profile--info span:first-child {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14.4662px;
+  line-height: 22px;
+  letter-spacing: 0.10333px;
+  color: #171725;
+}
+
+.drawer__user-profile--info span:last-child {
+  font-weight: 400;
+  font-size: 12.3996px;
+  line-height: 15px;
+  color: #92929d;
+  text-transform: lowercase;
+}
+
+.drawer__text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.drawer__badge {
+  background: #045450;
+  border-radius: 12.3996px;
+  width: 40px;
+  text-align: center;
+  color: #fff;
+}
+
+.drawer__most-used-options-title {
+  font-family: "Poppins", sans-serif;
+  padding-left: 16px;
+  margin-bottom: 0;
+  color: #92929d;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.962693px;
+}
+
+.MuiOutlinedInput-root {
+  border-radius: 12px !important;
+}
+
+.select-display-option {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+}
+
+.table-head-cell-content {
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.table-head-cell-content img {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.table-body-cell-content {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.table-body-cell-content .company-img {
+  margin-right: 15px;
+}
+
+.table-body-cell-content .dots {
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.1s;
+}
+
+.table-body-cell-content .dots:hover {
+  background: #e2e2e2;
+}
+
+.dots-tooltip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dots-tooltip-list__item {
+  padding: 10px 45px 10px 10px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.dots-tooltip-list__item:hover {
+  color: #fb3f61;
+  padding-left: 15px;
+}
+
+.edit-input-error {
+  font-size: 0.7rem;
+  color: red;
+  margin-bottom: 32px;
+}
+
+.edit-input-error.date {
+  margin-bottom: 0;
+}
+
+.pagination {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.select-number-of-rows-container {
+  display: flex;
+  align-items: center;
+}
+
+.show-number-of-rows-label {
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  color: #a0aec0;
+  margin-right: 16px;
+}
+
+@media screen and (max-width: 1250px) {
+  .pagination {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sign-in-form {
+    height: 70vh;
+    justify-content: space-around;
+  }
+
+  .sign-in-title.form-title br {
+    display: none;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .select-number-of-rows-container {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pagination {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .select-number-of-rows-container {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .sign-in-title.form-title {
+    font-size: 1.2rem;
+  }
+
+  .sign-in-form__options {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .forgotten-password {
+    margin-top: 15px;
+  }
+}
